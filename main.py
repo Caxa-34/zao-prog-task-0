@@ -1,7 +1,7 @@
 
 def findPair(nums: list[int], value: int) -> list[int]:
-    for first in range(len(nums)):
-        for second in range(first+1, len(nums)):
+    for first in range(len(nums) - 1):
+        for second in range(first + 1, len(nums)):
             if (nums[first] + nums[second] == value):
                 return [first, second]
     return []
